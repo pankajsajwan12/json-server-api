@@ -1,7 +1,14 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
+    "json-serve": "^0.1.0",
     "json-server": "^0.17.1"
-  }, "scripts": {
-    "start": "json-server --watch db.json"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
