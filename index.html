@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json-server</title>
+    <style>
+        #showData{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        #ascDescButton,#paginationButton{
+            display: flex;
+            margin: 40px 20px;
+            justify-content: center ;
+        }
+        #paginationButton > button{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="showData"></div>
+    <div id="ascDescButton">
+        <button id="asc">asc</button>
+       <button id="desc">desc</button>
+    </div>
+
+    <div id="paginationButton">
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
